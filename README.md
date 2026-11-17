@@ -13,12 +13,10 @@ An e-ink screen only uses power when the image changes, so between photos the Ko
 
 | | | |
 |:--:|:--:|:--:|
-| *(add a photo of the finished frame)* | *(add a photo of a picture on the screen)* | *(add a photo of the menu)* |
-<!--
-| ![Finished frame](docs/photos/finished-frame.jpg) | ![Photo on screen](docs/photos/photo-on-screen.jpg) | ![Menu](docs/photos/menu.jpg) |
--->
+| ![Photo on screen](docs/photos/example.jpg) | ![Menu](docs/photos/menu.jpg) |
 
-*(add here a photo or video of the FreeCAD assembly and of the physical frame)*
+
+*(docs/photos/freecad.jpg)*
 
 ---
 
