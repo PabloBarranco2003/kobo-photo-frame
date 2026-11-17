@@ -1,0 +1,12 @@
+# El script se ejecuta en el Kobo (Linux): SIEMPRE saltos de linea LF, aunque se clone en Windows.
+*.sh   text eol=lf
+*.c    text eol=lf
+*.py   text eol=lf
+kobo/.frame/frame.sh text eol=lf
+kobo/.frame/fbink binary
+kobo/.frame/fbink-static binary
+kobo/.frame/kbinput binary
+kobo/.frame/rtcalarm-static binary
+*.png  binary
+*.jpg  binary
+*.FCStd binary

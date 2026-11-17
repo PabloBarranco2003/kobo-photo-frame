@@ -1,0 +1,21 @@
+# Frame configuration (edit it on the PC; lines starting with # are comments).
+# Line endings can be LF or CRLF: the script strips any CR.
+
+# Seconds between photos. 3600 = 1 hour. Maximum 82800 (23 h).
+INTERVAL=3600
+# Photos shown before going back to the reader. 0 = unlimited.
+# While testing use 3; then set 0.
+MAX_CYCLES=0
+# Full flashing refresh every N photos (clears ghosting)
+FLASH_EVERY=6
+# If the battery drops below this % the frame stops and returns to the reader
+MIN_BATT=10
+
+# Menu when the icon is opened (1 = yes, 0 = start frame mode directly)
+MENU=1
+# Seconds of inactivity before the menu starts frame mode by itself (0 = wait forever)
+MENU_TIMEOUT=60
+# How "FIXED PHOTO" powers off: poweroff (full power off) or suspend (to RAM; Power button returns to the reader)
+FIXED_OFF=poweroff
+# 1 = log raw button/touch events to .frame/kbevents.log (diagnostics)
+MENU_DEBUG=0
