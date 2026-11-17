@@ -4,11 +4,6 @@ Turns a **Kobo Touch (N905C)** into an **e-ink photo frame without removing the 
 
 An e-ink screen only uses power when the image changes, so between photos the Kobo goes into **deep sleep** and wakes itself up with its internal clock (RTC). With one photo per hour the battery can last a very long time between charges.
 
-<!-- ============================================================
-     SPACE FOR PHOTOS OF THE RESULT
-     Save the images in docs/photos/ and uncomment/adjust the lines.
-     ============================================================ -->
-
 ## Result
 
 | Photo on screen | Menu |
@@ -17,7 +12,7 @@ An e-ink screen only uses power when the image changes, so between photos the Ko
 
 ### FreeCAD assembly
 
-![FreeCAD assembly](docs/photos/freecad.png)
+<img src="docs/photos/freecad.png" width="300" alt="FreeCAD assembly">
 
 ---
 
@@ -90,18 +85,19 @@ On-screen menu labels and log messages are in English.
 
 ## 3D model (FreeCAD)
 
-The physical frame (the enclosure that holds the Kobo) is modeled as a **FreeCAD assembly**.
+The physical frame (the enclosure that holds the Kobo) is modeled as a **FreeCAD assembly**, made with FreeCAD 1.1.
 
-The files go in [`hardware/freecad/`](hardware/freecad/):
+Files in [`hardware/freecad/`](hardware/freecad/):
 
-```
-hardware/freecad/
-├── frame.FCStd          ← complete assembly (to be added)
-├── parts/               ← individual parts, if any (to be added)
-└── stl/                 ← files for 3D printing (to be added)
-```
+| File | Content |
+|---|---|
+| `MarcoEnsamblaje.FCStd` | Complete assembly (open this one) |
+| `MarcoKobo.FCStd` | Frame body |
+| `Kobo_touch.FCStd` | Kobo Touch model |
+| `Marco_Bracket.FCStd`, `Marco_Bracket3.FCStd` | Brackets |
+| `Marco_Pata.FCStd` | Support leg |
 
-> **To be filled in:** FreeCAD version used, material, tolerances, hardware (screws) and how the Kobo is held.
+Keep all the files in the same folder: the assembly links to the other parts by file name.
 
 ## Requirements
 
@@ -190,7 +186,7 @@ Copy the result to `E:\.frame\photos\` (delete the three sample photos first). P
 ├── src/                  ← source code of kbinput and rtcalarm + build.sh
 ├── tools/                ← photo preparation (HTML and Python)
 ├── hardware/freecad/     ← 3D model of the frame (FreeCAD assembly)
-├── docs/photos/           ← photos of the result for this README
+├── docs/photos/          ← photos of the result for this README
 ├── THIRD_PARTY.md        ← third-party software and licenses
 └── LICENSE
 ```
