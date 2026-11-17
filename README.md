@@ -17,7 +17,7 @@ An e-ink screen only uses power when the image changes, so between photos the Ko
 
 ### FreeCAD assembly
 
-![FreeCAD assembly](docs/photos/freecad.jpg)
+![FreeCAD assembly](docs/photos/freecad.png)
 
 ---
 
